@@ -1,0 +1,110 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "rhcustomer",
+    "version" : "1.0.0",
+    "title" : "rhcustomer"
+  },
+  "paths" : {
+    "/rhcustomer" : {
+      "get" : {
+        "summary" : "get rhcustomer",
+        "description" : "get rh customer",
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "all good",
+            "schema" : {
+              "$ref" : "#/definitions/customer"
+            }
+          }
+        },
+        "x-contentType" : "application/json",
+        "x-accepts" : "application/json"
+      },
+      "post" : {
+        "summary" : "post rhcustomer",
+        "description" : "post rhcustomer",
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/customer"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "all good",
+            "schema" : {
+              "$ref" : "#/definitions/customer"
+            }
+          }
+        },
+        "x-contentType" : "application/json",
+        "x-accepts" : "application/json"
+      },
+      "put" : {
+        "summary" : "put rhcustomer",
+        "description" : "put rhcustomer",
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "use this format",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/customer"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "all good",
+            "schema" : {
+              "$ref" : "#/definitions/customer"
+            }
+          }
+        },
+        "x-contentType" : "application/json",
+        "x-accepts" : "application/json"
+      },
+      "delete" : {
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "all good",
+            "schema" : {
+              "$ref" : "#/definitions/customer"
+            }
+          }
+        },
+        "x-contentType" : "application/json",
+        "x-accepts" : "application/json"
+      }
+    }
+  },
+  "definitions" : {
+    "customer" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "category" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "region" : {
+          "type" : "string"
+        },
+        "supportlevel" : {
+          "type" : "string"
+        }
+      },
+      "title" : "Root Type for customer",
+      "description" : "The root of the customer type's schema."
+    }
+  }
+}
