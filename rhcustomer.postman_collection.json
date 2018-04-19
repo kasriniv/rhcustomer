@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "63b2b017-3f92-4a3c-a9cc-744dd9e892b6",
 		"name": "rhcustomer",
-		"description": "rhcustomer",
+		"description": "version=1.0 rhcustomer",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
